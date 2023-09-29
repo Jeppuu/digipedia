@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #24384f;
+  
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+@font-face {
+  font-family: 'Pixel Digivolve';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.glitch.global/763a7982-f8d3-4aab-a35e-3788348d4262/PixelDigivolve-mOm9.ttf?v=1695878819565') format('truetype'),
+    
+}
+
+
+body {
+  font-family: HK Grotesk, sans-serif;
+  background-color: var(--color-bg);
+
+}
+h1{
+  font-family: Pixel Digivolve, sans-serif;
+}
+img{
+  background-color: white;
+}
+
+.shadow-footer{
+  width: 100%;
+  height: 8px; /* Adjust the height of the shadow as needed */
+  background-color: transparent; /* Set the background color to transparent */
+  box-shadow: 0px -4px 4px rgba(72, 112, 158,0.5); /* Apply the shadow to the top border */
+
+}
